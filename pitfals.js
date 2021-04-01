@@ -8,12 +8,17 @@
 // * Check if `"hello"` is NaN. 
 
 console.log(typeof "hello");
+// string
 
 // * Check if `3` is NaN.
 
 console.log(typeof 3);
-// * What is the type of NaN?
+// number
 
+// * What is the type of NaN?
+console.log(typeof NaN);
+// number
+// These examples will print NaN
 console.log(parseInt("blabla"));
 console.log(Math.sqrt(-1));
 console.log(5 ** NaN);
@@ -29,6 +34,7 @@ console.log("something" / 3);
 // Use a method to make sure that only `0.02` is printed.
 
 console.log((0.1 * 0.2).toFixed(2));
+// 0.02
 
 // #### 3. Infinity
 // * Divide Infinity by `0`. 
@@ -36,9 +42,11 @@ console.log((0.1 * 0.2).toFixed(2));
 // * Divide `1` by `0`.
 
 console.log(Infinity / 0);
+// Result Infinity
 console.log(Infinity / Infinity);
+// result: NaN
 console.log(1 / 0);
-
+// result: Infinity
 
 
 
